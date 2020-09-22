@@ -33,5 +33,5 @@ Aqui é onde você insere os passos/comandos necessários pra fazer toda a baga�
 - Eu sei que você consegue usar lista
 
 ### Dúvidas?
-[Abra uma Issue e descreva sua dúvida clicando aqui](github.com/mybets/challenge/issues/new?labels=question).
+[Abra uma Issue e descreva sua dúvida clicando aqui](https://github.com/mybets/challenge/issues/new?labels=question).
 
