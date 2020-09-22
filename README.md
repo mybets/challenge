@@ -5,7 +5,7 @@ TL;DR; Para este desafio você precisará construir esta maravilhosa landing pag
 ![Etrader Landing](assets/landing.png)
 
 ## Descrição
-Queremos através deste desafio analisar quais são seus conhecimentos em Javascript (e seus frameworks), HTML e CSS. Você deverá copiar o layout proposto para esta landing page utilizando algum framework conhecido como React, VueJS, Angular, Svelte e por aí vai. Você consegue? Então toca ficha e vem trabalhar com a gente! ;)
+Queremos através deste desafio analisar quais são seus conhecimentos em Javascript (e seus frameworks), HTML e CSS. Você deverá copiar o layout proposto para esta landing page utilizando algum framework conhecido como React, VueJS, Angular, Svelte e por aí vai. E aí, consegue? Então toca ficha e vem trabalhar com a gente! ;)
 
 ### Passo a passo
 Eis aqui o que você precisa fazer. Vamos lá:
@@ -21,7 +21,8 @@ Eis aqui o que você precisa fazer. Vamos lá:
 - Feito, é só aguardar que vamos analisar e te responder ;)
 
 ### Bônus pra quem é bão memo, o bixão
-Se você é fera e quiser uma atenção especial, faça:
+Se você é fera e quiser uma atenção especial, faça algo ou tudo da lista abaixo:
+- Utilize Scss/Less;
 - Utilize alguma biblioteca de ícones (Feather, FontAwesome, etc) via Javascript;
 - Crie uma API REST em Javascript (usando express, AdonisJS, etc.) que possua apenas uma rota chamada ```/features```. Esta rota deve devolver em formato lista/array as informações dos cards da área lateral direita (fundo laranja). Substitua o contúdo fixo e faça com que a landing consuma desta API e exiba as mesmas informações. Por fim, coloque o código desta API em uma pasta chamada ```api``` e entregue junto. Não se esqueça de colocar as instruções de como iniciar a API localmente na seção **Build da minha landing**
 
