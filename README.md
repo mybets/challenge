@@ -16,7 +16,7 @@ Eis aqui o que você precisa fazer. Vamos lá:
 - Utilize as imagens e ícones que estão na pasta ```assets/```
 - Fontes utilizadas: [Raleway](https://fonts.google.com/specimen/Raleway) e [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Para te ajudar, você pode se guiar visualmente pelo Figma usando o arquivo ```assets/landing-figma.fig```
-- Substitua a seção **Build da minha landing** deste README.md e insira as instruções do que deve ser feito para fazer sua landing funcionar e a gente ver o resultado;
+- Substitua a seção **Build da minha landing** deste README.md e insira as instruções do que deve ser feito para fazer sua landing funcionar e a gente ver o resultado
 - Assim que concluir, abra um PR neste repositório com o título sendo seu nome completo, escrito de maneira normal
 - Feito, é só aguardar que vamos analisar e te responder ;)
 
