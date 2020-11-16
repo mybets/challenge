@@ -28,9 +28,15 @@ Se você é fera e quiser uma atenção especial, faça algo ou tudo da lista ab
 
 ### Build da minha landing
 Aqui é onde você insere os passos/comandos necessários pra fazer toda a bagaça que você codou funcionar.
-- Use formato lista
-- Sério, use lista mesmo
-- Eu sei que você consegue usar lista
+
+- Acessar o diretório "backend" e executar o comando "yarn" para instalar as dependências
+- Acessar o diretório "frontend" e executar o comando "yarn" para instalar as dependências
+- No backend o arquivo de variáveis de ambiente (.env) possui o valor (http://localhost:3333) para o endereço da API
+- Caso o backend seja executado em outro ambiente, este valor de variável deve ser alterado de acordo com o endereço do ambiente
+- Acessar o diretório "backend" e executar o comando "yarn dev" para iniciar o servidor
+- Acessar o diretório "frontend" e executar o comando "yarn start" para compilar e renderizar a tela
+- O backend possui uma única rota (/features) com o método "GET" e está acessível no endereço (http://localhost:3333/features)
+- O frontend possui uma única rota (/) e está acessível no endereço (http://localhost:3000)
 
 ### Dúvidas?
 [Abra uma Issue e descreva sua dúvida clicando aqui](https://github.com/mybets/challenge/issues/new?labels=question).
