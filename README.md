@@ -9,7 +9,8 @@ Queremos através deste desafio analisar quais são seus conhecimentos em Javasc
 
 ### Passo a passo
 Eis aqui o que você precisa fazer. Vamos lá:
-- Faça um ```git clone``` deste repositório na sua máquina
+- Faça um fork do projeto
+- Faça um ```git clone``` na sua máquina, do repositório criado a partir do fork
 - Crie uma ```branch``` com seu nome no formato ```slug-case``` (Ex: ```john-doe```)
 - No próprio repo clonado (dentro da sua branch), construa a landing usando React, VueJS, Angular, Svelte, etc.
 - Todos os botões da landing não possuem ação
@@ -17,7 +18,7 @@ Eis aqui o que você precisa fazer. Vamos lá:
 - Fontes utilizadas: [Raleway](https://fonts.google.com/specimen/Raleway) e [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Para te ajudar, você pode se guiar visualmente pelo Figma usando o arquivo ```assets/landing-figma.fig```
 - Substitua a seção **Build da minha landing** deste README.md e insira as instruções do que deve ser feito para fazer sua landing funcionar e a gente ver o resultado
-- Assim que concluir, abra um PR neste repositório com o título sendo seu nome completo, escrito de maneira normal
+- Assim que concluir, abra um PR no repositório criado a partir do fork, com o título sendo seu nome completo, escrito de maneira normal
 - Feito, é só aguardar que vamos analisar e te responder ;)
 
 ### Bônus pra quem é bão memo, o bixão
