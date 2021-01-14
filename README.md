@@ -40,6 +40,8 @@ Se você é fera e quiser uma atenção especial, faça algo ou tudo da lista ab
 - Estando na raiz do projeto execute o comando `npm i` para instalar as dependências do projeto;
 - Execute o comando `npm run serve` para inicializar a aplicação frontend.
 
+Obs: para execução da aplicação frontend é necessária a instalação do Vue CLI com o comando `npm install -g @vue/cli`
+
 ### Dúvidas?
 [Abra uma Issue e descreva sua dúvida clicando aqui](https://github.com/mybets/challenge/issues/new?labels=question).
 
