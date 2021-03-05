@@ -1,0 +1,31 @@
+@import "mixins";
+@import "font-config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ed6e2d;
+  --title: #525256;
+  --detail: #1ca78b;
+  --subtitle: #3e4b5b;
+  --white: #fff;
+  --background-1: #d95129;
+  --background-2: #f16521;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+
+  &,
+  * {
+    cursor: pointer;
+  }
+}

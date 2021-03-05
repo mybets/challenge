@@ -1,0 +1,24 @@
+{
+  "name": "etrader-monorepo",
+  "version": "1.0.0",
+  "description": "TL;DR; Para este desafio você precisará construir esta maravilhosa landing page utilizando algum framework Javascript (React, VueJS, Angular, Svelte, etc.).",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "concurrently -k -s first -n \"API,LANDING_PAGE\" -c \"green,yellow\" \"cd api && npm i\" \"cd landing-page && npm i\"",
+    "start": "concurrently -k -s first -n \"API,LANDING_PAGE\" -c \"green,yellow\" \"cd api && npm run dev\" \"cd landing-page && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelboff/challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikaelboff/challenge/issues"
+  },
+  "homepage": "https://github.com/mikaelboff/challenge#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "shx": "^0.3.3"
+  }
+}

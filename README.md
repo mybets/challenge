@@ -29,10 +29,11 @@ Se você é fera e quiser uma atenção especial, faça algo ou tudo da lista ab
 
 ### Build da minha landing
 Aqui é onde você insere os passos/comandos necessários pra fazer toda a bagaça que você codou funcionar.
-- Use formato lista
-- Sério, use lista mesmo
-- Eu sei que você consegue usar lista
+- Rodar os seguintes comandos no diretório raiz:
+```shell
+npm i
+npm run start
+```
 
 ### Dúvidas?
 [Abra uma Issue e descreva sua dúvida clicando aqui](https://github.com/mybets/challenge/issues/new?labels=question).
-
