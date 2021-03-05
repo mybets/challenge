@@ -1,50 +1,38 @@
 <div class="container">
-  <div class="content-left">
-    <header>
-      <img src="assets/img/logo.png" alt="Logotipo">
-    </header>
+    <div class="content-left">
+        <header>
+            <img src="assets/img/logo.png" alt="Logotipo">
+        </header>
 
-    <div class="content">
-      <div class="title">
-        Ser o próximo trader<br>
-        esportivo é muito <strong>fácil|</strong>
-      </div>
+        <div class="content">
+            <div class="title">
+                Ser o próximo trader<br>
+                esportivo é muito <strong>fácil|</strong>
+            </div>
 
-      <div class="subtitle">
-        Só na ETRADE Inc. você tem acesso ao melhor<br>
-        dashboard de análise de mercado esportivo.<br>
-        Melhore seu perfil e obtenha lucros de até 2x<br>
-        mais.
-      </div>
+            <div class="subtitle">
+                Só na ETRADE Inc. você tem acesso ao melhor<br>
+                dashboard de análise de mercado esportivo.<br>
+                Melhore seu perfil e obtenha lucros de até 2x<br>
+                mais.
+            </div>
 
-      <button>Crie sua conta grátis!</button>
-    </div>
-  </div>
-
-  <div class="content-right">
-    <img src="assets/img/bg-shapes.png" class="background-texture">
-
-    <header>
-      <button>
-        <fa-icon [icon]="lockIcon"></fa-icon>
-        <label>LOG IN</label>
-      </button>
-
-      <button>
-        <fa-icon [icon]="plusIcon"></fa-icon>
-        <label>CADASTRAR</label>
-      </button>
-    </header>
-
-    <div class="content">
-      <div class="card" [class.destaque]="i%2 !== 0" *ngFor="let feature of features$ | async; index as i">
-        <img [src]="'assets/img/icon-'+ feature.icon +'.png'">
-
-        <div class="description">
-          <label>{{ feature.description }}</label>
-          <label class="link" *ngIf="i%2 !== 0">Veja mais →</label>
+            <app-button-primary label="Crie sua conta grátis!"></app-button-primary>
         </div>
-      </div>
     </div>
-  </div>
+
+    <div class="content-right">
+        <img src="assets/img/bg-shapes.png" class="background-texture">
+
+        <header>
+            <app-button-secondary [icon]="lockIcon" label="LOG IN"></app-button-secondary>
+            <app-button-secondary [icon]="plusIcon" label="CADASTRAR"></app-button-secondary>
+        </header>
+
+        <div class="content">
+            <app-card [index]="i" [description]="feature.description" [icon]="feature.icon"
+                *ngFor="let feature of features$ | async; index as i">
+            </app-card>
+        </div>
+    </div>
 </div>

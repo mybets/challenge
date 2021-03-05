@@ -1,31 +1,43 @@
-@import "mixins";
-@import "font-config";
+@import 'mixins';
+@import 'font-config';
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --primary: #ed6e2d;
-  --title: #525256;
-  --detail: #1ca78b;
-  --subtitle: #3e4b5b;
-  --white: #fff;
-  --background-1: #d95129;
-  --background-2: #f16521;
+    --primary: #ed6e2d;
+    --title: #525256;
+    --detail: #1ca78b;
+    --subtitle: #3e4b5b;
+    --white: #fff;
+    --background-1: #d95129;
+    --background-2: #f16521;
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media (max-width: 890px) {
+    html {
+        font-size: 78.75%;
+    }
 }
 
 button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  border: 0;
+    border: 0;
 
-  &,
-  * {
-    cursor: pointer;
-  }
+    &,
+    * {
+        cursor: pointer;
+    }
 }

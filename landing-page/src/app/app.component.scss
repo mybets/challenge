@@ -1,187 +1,88 @@
-@import "mixins";
+@import 'mixins';
 
 .container {
-  height: 100vh;
+    height: 100vh;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  .content- {
-    &left,
-    &right {
-      display: flex;
-      flex-direction: column;
+    .content- {
+        &left,
+        &right {
+            display: flex;
+            flex-direction: column;
 
-      header {
-        flex: none;
+            header {
+                flex: none;
 
-        padding-top: 20px;
-      }
+                padding-top: 20px;
+            }
 
-      .content {
-        flex: auto;
-        flex-direction: column;
-        display: flex;
-        @include align-and-justify(center);
-      }
+            .content {
+                flex: auto;
+                flex-direction: column;
+                display: flex;
+                @include align-and-justify(center);
+            }
+        }
     }
-  }
 }
 
 .content-left {
-  @include align-and-justify(center);
+    @include align-and-justify(center);
 
-  header {
-    align-self: flex-start;
-    padding-left: 40px;
+    header {
+        align-self: flex-start;
+        padding-left: 8.5rem;
 
-    img {
-      width: 200px;
+        img {
+            width: 200px;
+        }
     }
-  }
 
-  .title {
-    @include font("Raleway", 38px, 900, var(--title), 48px);
+    .title {
+        @include font('Raleway', 2.5rem, 900, var(--title), 48px);
 
-    strong {
-      @include link-style(var(--detail));
+        strong {
+            @include link-style(var(--detail));
+        }
     }
-  }
 
-  .subtitle {
-    margin-left: 35px;
-    margin-top: 80px;
+    app-button-primary {
+        margin-top: 70px;
+    }
 
-    @include font("Raleway", 20px, 400, var(--subtitle), 40px);
-  }
+    .subtitle {
+        margin-left: 35px;
+        margin-top: 80px;
 
-  button {
-    height: 80px;
-    padding: 0 50px;
-    margin-top: 70px;
-    border-radius: 15px;
-
-    background-color: var(--primary);
-
-    @include font("Raleway", 24px, 900, var(--white), 40px);
-
-    transition: opacity 0.2s;
-  }
-
-  button:hover {
-    opacity: 0.7;
-  }
+        @include font('Raleway', 1.3rem, 400, var(--subtitle), 40px);
+    }
 }
 
 .content-right {
-  position: relative;
+    position: relative;
 
-  height: 100vh;
+    height: 100vh;
 
-  background: linear-gradient(
-    49.29deg,
-    var(--background-1),
-    var(--background-2)
-  );
+    background: linear-gradient(49.29deg, var(--background-1), var(--background-2));
 
-  .background-texture {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    .background-texture {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
 
-    filter: brightness(2);
-  }
+        filter: brightness(2);
+    }
 
-  header {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
+    header {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
 
-    button {
-      height: 48px;
-      background: transparent;
-      border: 1px solid var(--white);
-      border-radius: 7px;
-      padding: 0 20px;
-
-      &:first-child {
-        margin-right: 20px;
-      }
-
-      fa-icon {
-        margin-right: 10px;
-        color: var(--white);
-      }
-
-      label {
-        @include font("Raleway", 14px, 600, var(--white));
-      }
-
-      transition: background-color 0.2s;
-
-      &:hover {
-        background-color: var(--white);
-        border-color: var(--primary);
-
-        label,
-        fa-icon {
-          color: var(--primary);
+        app-button-secondary:first-child {
+            margin-right: 20px;
         }
-      }
     }
-  }
-
-  .card {
-    display: flex;
-    @include align-and-justify(center);
-    width: 334.8px;
-    height: 250px;
-
-    border-radius: 15px;
-    background: var(--primary);
-    color: var(--white);
-
-    img {
-      height: 70px;
-    }
-
-    .description {
-      display: flex;
-      flex-direction: column;
-      margin-left: 15px;
-      padding: 15px 0 15px 15px;
-      width: 165px;
-      border-left: 1px solid var(--white);
-      @include font("OpenSans", 16px, false, false, 21px);
-
-      .link {
-        cursor: pointer;
-        margin-top: 10px;
-        @include link-style(var(--detail));
-      }
-    }
-
-    &:not(.destaque):first-child {
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-    }
-
-    &:not(.destaque):last-child {
-      border-top-left-radius: 0 !important;
-      border-top-right-radius: 0 !important;
-    }
-
-    &.destaque {
-      width: 358.8px;
-      z-index: 1;
-      background: var(--white);
-      color: #000;
-      box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
-
-      .description {
-        border-color: var(--primary) !important;
-      }
-    }
-  }
 }

@@ -5,7 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "format": "npm run lint:fix && npm run format:prettier && npm run format:html",
+    "format:prettier": "prettier --config .prettierrc \"src/**/*.{ts,scss}\" --write",
+    "format:html": "node bin/beautify-html.js"
   },
   "private": true,
   "dependencies": {
@@ -29,9 +33,28 @@
     "@angular/cli": "~9.1.10",
     "@angular/compiler-cli": "~9.1.11",
     "@types/node": "^12.11.1",
+    "angular-tslint-rules": "^1.20.4",
     "codelyzer": "^5.1.2",
+    "husky": "^1.3.1",
+    "js-beautify": "^1.10.0",
+    "lint-staged": "^9.0.0",
+    "prettier": "^2.0.5",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "~3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,scss}": [
+      "prettier --config .prettierrc -l"
+    ],
+    "projects/**/*.{ts,scss}": [
+      "prettier --config .prettierrc -l"
+    ]
   }
 }

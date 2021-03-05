@@ -1,0 +1,8 @@
+<div class="container" [class.destaque]="destaque">
+    <img [src]="pathIcon">
+
+    <div class="description">
+        <label>{{ description }}</label>
+        <label class="link" *ngIf="destaque">Veja mais →</label>
+    </div>
+</div>

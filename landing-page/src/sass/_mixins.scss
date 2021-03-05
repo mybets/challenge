@@ -1,32 +1,26 @@
-@mixin font(
-  $family,
-  $font-size,
-  $weight: false,
-  $color: false,
-  $line-height: false
-) {
-  font-family: $family;
-  font-size: $font-size;
+@mixin font($family, $font-size, $weight: false, $color: false, $line-height: false) {
+    font-family: $family;
+    font-size: $font-size;
 
-  @if ($weight) {
-    font-weight: $weight;
-  }
+    @if ($weight) {
+        font-weight: $weight;
+    }
 
-  @if ($color) {
-    color: $color;
-  }
+    @if ($color) {
+        color: $color;
+    }
 
-  @if ($line-height) {
-    line-height: $line-height;
-  }
+    @if ($line-height) {
+        line-height: $line-height;
+    }
 }
 
 @mixin link-style($color) {
-  color: $color;
-  text-decoration: underline;
+    color: $color;
+    text-decoration: underline;
 }
 
 @mixin align-and-justify($position) {
-  align-items: $position;
-  justify-content: $position;
+    align-items: $position;
+    justify-content: $position;
 }

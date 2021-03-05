@@ -1,0 +1,30 @@
+@import 'mixins';
+
+button {
+    height: 3rem;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 7px;
+    padding: 0 20px;
+
+    fa-icon {
+        margin-right: 10px;
+        color: var(--white);
+    }
+
+    label {
+        @include font('Raleway', 0.9rem, 600, var(--white));
+    }
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: var(--white);
+        border-color: var(--primary);
+
+        label,
+        fa-icon {
+            color: var(--primary);
+        }
+    }
+}
