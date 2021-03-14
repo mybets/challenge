@@ -1,0 +1,47 @@
+@import "_colors.scss";
+.main {
+  & section {
+    min-height: 100vh;
+  }
+  & .columnOne {
+    padding: 20%;
+    line-height: 30px;
+
+    align-items: center;
+    justify-content: center;
+
+    & strong {
+      color: $secondary;
+      text-decoration: underline;
+    }
+    & h2 {
+      margin-bottom: 40px;
+
+      color: rgba($black, 0.8);
+    }
+    & p {
+      color: rgba($black, 1);
+      font-weight: 300;
+    }
+    & .button {
+      margin-top: 45px;
+      padding: 20px 0;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-grow: 0;
+      align-self: flex-start;
+    }
+  }
+  & .columnTwo {
+    background: $primary url("../../assets/bg-shapes2.png");
+    background-size: auto 100%;
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    & .columnOne {
+      justify-content: flex-start;
+    }
+  }
+}

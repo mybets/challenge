@@ -1,0 +1,48 @@
+@import "_colors.scss";
+
+.article {
+  background-color: rgba($primary, 0.65);
+  color: $white;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  min-height: 230px;
+  border-radius: 10px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 300;
+  img {
+    transform: scale(0.9);
+    will-change: transform;
+  }
+  &:not(.active) {
+    filter: sepia(0.05) brightness(1.3);
+  }
+  &.active {
+    background-color: $white;
+    color: $black;
+    transform: scale(1.05);
+    z-index: 1;
+    & .contentDescription {
+      border-left: 1px solid rgba($primary, 0.4);
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+  & .contentIcon {
+    min-width: 120px;
+  }
+  & .contentDescription {
+    border-left: 1px solid rgba($white, 0.3);
+    padding: 20px 0 20px 10px;
+  }
+  & .button {
+    color: $secondary;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $secondary;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+}

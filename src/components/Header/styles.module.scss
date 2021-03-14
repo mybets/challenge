@@ -1,0 +1,32 @@
+@import "_colors.scss";
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 70px;
+  padding: 18px 7%;
+  nav {
+    flex: 1;
+    align-items: flex-start;
+  }
+  .button {
+    font-family: Raleway;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba($white, 0.6);
+    margin-left: 15px;
+    padding: 5px 18px;
+    width: auto;
+    font-size: 0.75rem;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .logo {
+    height: 50px;
+  }
+}
